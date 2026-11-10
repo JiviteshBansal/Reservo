@@ -3,6 +3,8 @@
 Reinforcement learning for dialogue policy in restaurant booking, using the
 **MultiWOZ 2.1** dataset (restaurant domain only).
 
+Dataset Link - https://www.kaggle.com/datasets/taejinwoo/multiwoz-22?resource=download
+
 The agent learns to manage a conversation — asking for preferences, querying a
 database, offering venues, handling bookings — entirely through trial and error
 via a DQN trained against an agenda-based user simulator.
