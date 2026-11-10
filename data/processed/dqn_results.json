@@ -1,0 +1,140 @@
+{
+  "comparison": {
+    "random": {
+      "success_rate": 0.138,
+      "avg_turns": 8.17,
+      "std_turns": 5.99,
+      "avg_reward": -30.44,
+      "std_reward": 24.62
+    },
+    "rule_based": {
+      "success_rate": 1.0,
+      "avg_turns": 6.71,
+      "std_turns": 1.3,
+      "avg_reward": 33.29,
+      "std_reward": 1.3
+    },
+    "supervised": {
+      "success_rate": 0.027,
+      "avg_turns": 14.51,
+      "std_turns": 3.17,
+      "avg_reward": -41.73,
+      "std_reward": 15.46
+    },
+    "dqn_cold": {
+      "success_rate": 1.0,
+      "avg_reward": 36.35666666666666,
+      "per_seed": {
+        "42": {
+          "success_rate": 1.0,
+          "avg_reward": 35.51,
+          "avg_turns": 3.516,
+          "num_goals": 1000
+        },
+        "123": {
+          "success_rate": 1.0,
+          "avg_reward": 36.375,
+          "avg_turns": 3.233,
+          "num_goals": 1000
+        },
+        "456": {
+          "success_rate": 1.0,
+          "avg_reward": 37.185,
+          "avg_turns": 2.815,
+          "num_goals": 1000
+        }
+      }
+    },
+    "dqn_warm": {
+      "success_rate": 1.0,
+      "avg_reward": 36.81999999999999,
+      "per_seed": {
+        "42": {
+          "success_rate": 1.0,
+          "avg_reward": 36.614,
+          "avg_turns": 3.386,
+          "num_goals": 1000
+        },
+        "123": {
+          "success_rate": 1.0,
+          "avg_reward": 37.288,
+          "avg_turns": 2.706,
+          "num_goals": 1000
+        },
+        "456": {
+          "success_rate": 1.0,
+          "avg_reward": 36.558,
+          "avg_turns": 3.054,
+          "num_goals": 1000
+        }
+      }
+    }
+  },
+  "cold_start": {
+    "best_seed": 42,
+    "eval": {
+      "success_rate": 1.0,
+      "avg_reward": 35.51,
+      "avg_turns": 3.516,
+      "num_goals": 1000
+    },
+    "per_seed": {
+      "42": {
+        "success_rate": 1.0,
+        "avg_reward": 35.51,
+        "avg_turns": 3.516,
+        "num_goals": 1000
+      },
+      "123": {
+        "success_rate": 1.0,
+        "avg_reward": 36.375,
+        "avg_turns": 3.233,
+        "num_goals": 1000
+      },
+      "456": {
+        "success_rate": 1.0,
+        "avg_reward": 37.185,
+        "avg_turns": 2.815,
+        "num_goals": 1000
+      }
+    }
+  },
+  "warm_start": {
+    "best_seed": 42,
+    "eval": {
+      "success_rate": 1.0,
+      "avg_reward": 36.614,
+      "avg_turns": 3.386,
+      "num_goals": 1000
+    },
+    "per_seed": {
+      "42": {
+        "success_rate": 1.0,
+        "avg_reward": 36.614,
+        "avg_turns": 3.386,
+        "num_goals": 1000
+      },
+      "123": {
+        "success_rate": 1.0,
+        "avg_reward": 37.288,
+        "avg_turns": 2.706,
+        "num_goals": 1000
+      },
+      "456": {
+        "success_rate": 1.0,
+        "avg_reward": 36.558,
+        "avg_turns": 3.054,
+        "num_goals": 1000
+      }
+    }
+  },
+  "config": {
+    "num_episodes": 5000,
+    "seeds": [
+      42,
+      123,
+      456
+    ],
+    "warm_epsilon_start": 0.3
+  }
+}

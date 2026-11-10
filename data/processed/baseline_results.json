@@ -1,0 +1,16 @@
+{
+  "Rule-Based": {
+    "success_rate": 1.0,
+    "avg_turns": 6.71,
+    "std_turns": 1.3,
+    "avg_reward": 33.29,
+    "std_reward": 1.3
+  },
+  "Random": {
+    "success_rate": 0.138,
+    "avg_turns": 8.17,
+    "std_turns": 5.99,
+    "avg_reward": -30.44,
+    "std_reward": 24.62
+  }
+}

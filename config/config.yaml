@@ -1,0 +1,50 @@
+# =============================================================================
+# Configuration for RL Restaurant Booking Chatbot
+# All hyperparameters and paths in one place for reproducibility.
+# =============================================================================
+
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  multiwoz_url: "https://github.com/budzianowski/multiwoz/raw/master/data/MultiWOZ_2.1.zip"
+
+domain:
+  informable_slots: ["food", "area", "pricerange"]
+  requestable_slots: ["address", "phone", "postcode"]
+  booking_slots: ["people", "day", "time"]
+
+environment:
+  max_turns: 20
+  reward:
+    step_penalty: -1.0
+    success_multiplier: 2       # success reward = 2 * max_turns = 40
+    failure_multiplier: -1      # failure penalty = -1 * max_turns = -20
+    redundant_penalty: -2.0     # asking for info we already have
+    invalid_penalty: -3.0       # action that makes no sense in current state
+
+training:
+  seed: 42
+  dqn:
+    lr: 1.0e-4
+    gamma: 0.99
+    buffer_size: 50000
+    batch_size: 64
+    target_update_freq: 1000
+    epsilon_start: 1.0
+    epsilon_end: 0.05
+    epsilon_decay_steps: 10000
+    num_episodes: 5000
+    hidden_dims: [128, 128]
+  supervised:
+    lr: 1.0e-3
+    batch_size: 128
+    epochs: 50
+    hidden_dims: [128, 128]
+
+evaluation:
+  num_test_goals: 1000
+  seeds: [42, 123, 456]
+
+simulator:
+  noise_level: 0.0   # P(user gives wrong or missing slot value)
+

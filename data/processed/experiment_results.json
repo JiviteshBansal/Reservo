@@ -1,0 +1,226 @@
+{
+  "exp_a": {
+    "default": {
+      "success_rate": 1.0,
+      "avg_reward": 35.51,
+      "avg_turns": 3.516
+    },
+    "no_shaping": {
+      "success_rate": 0.593,
+      "avg_reward": 8.617,
+      "avg_turns": 3.812
+    }
+  },
+  "exp_b": {
+    "noise_0pct": {
+      "success_rate": 1.0,
+      "avg_reward": 35.51,
+      "avg_turns": 3.516
+    },
+    "noise_10pct": {
+      "success_rate": 1.0,
+      "avg_reward": 36.599,
+      "avg_turns": 3.253
+    },
+    "noise_20pct": {
+      "success_rate": 0.988,
+      "avg_reward": 35.852,
+      "avg_turns": 3.392
+    },
+    "cross_eval": {
+      "train0_test0": 1.0,
+      "train0_test10": 0.805,
+      "train0_test20": 0.665,
+      "train10_test0": 1.0,
+      "train10_test10": 0.885,
+      "train10_test20": 0.725,
+      "train20_test0": 0.975,
+      "train20_test10": 0.85,
+      "train20_test20": 0.69
+    }
+  },
+  "exp_c": {
+    "cold": {
+      "42": {
+        "success_rate": 1.0,
+        "avg_reward": 35.51,
+        "avg_turns": 3.516
+      },
+      "123": {
+        "success_rate": 1.0,
+        "avg_reward": 36.375,
+        "avg_turns": 3.233
+      },
+      "456": {
+        "success_rate": 1.0,
+        "avg_reward": 37.185,
+        "avg_turns": 2.815
+      },
+      "mean": {
+        "success_rate": 1.0,
+        "avg_reward": 36.35666666666666,
+        "avg_turns": 3.188,
+        "std_reward": 0.683938756192559,
+        "std_turns": 0.2879455967134533
+      }
+    },
+    "warm": {
+      "42": {
+        "success_rate": 1.0,
+        "avg_reward": 36.614,
+        "avg_turns": 3.386
+      },
+      "123": {
+        "success_rate": 1.0,
+        "avg_reward": 37.289,
+        "avg_turns": 2.705
+      },
+      "456": {
+        "success_rate": 1.0,
+        "avg_reward": 36.558,
+        "avg_turns": 3.054
+      },
+      "mean": {
+        "success_rate": 1.0,
+        "avg_reward": 36.82033333333333,
+        "avg_turns": 3.0483333333333333,
+        "std_reward": 0.3321850220718715,
+        "std_turns": 0.2780459594303711
+      }
+    }
+  },
+  "exp_d": {
+    "All (1000)": {
+      "Random": {
+        "success_rate": 0.138,
+        "avg_reward": -30.435,
+        "avg_turns": 8.171
+      },
+      "Rule-Based": {
+        "success_rate": 1.0,
+        "avg_reward": 33.289,
+        "avg_turns": 6.711
+      },
+      "DQN Cold": {
+        "success_rate": 1.0,
+        "avg_reward": 37.185,
+        "avg_turns": 2.815
+      },
+      "DQN Warm": {
+        "success_rate": 1.0,
+        "avg_reward": 37.289,
+        "avg_turns": 2.705
+      }
+    },
+    "Requests only": {
+      "Random": {
+        "success_rate": 0.1011764705882353,
+        "avg_reward": -35.218823529411765,
+        "avg_turns": 9.174117647058823
+      },
+      "Rule-Based": {
+        "success_rate": 1.0,
+        "avg_reward": 32.39058823529412,
+        "avg_turns": 7.609411764705882
+      },
+      "DQN Cold": {
+        "success_rate": 1.0,
+        "avg_reward": 36.19294117647059,
+        "avg_turns": 3.807058823529412
+      },
+      "DQN Warm": {
+        "success_rate": 1.0,
+        "avg_reward": 36.32705882352941,
+        "avg_turns": 3.6588235294117646
+      }
+    },
+    "Booking required": {
+      "Random": {
+        "success_rate": 0.1443478260869565,
+        "avg_reward": -27.653913043478262,
+        "avg_turns": 7.038260869565217
+      },
+      "Rule-Based": {
+        "success_rate": 1.0,
+        "avg_reward": 33.95304347826087,
+        "avg_turns": 6.046956521739131
+      },
+      "DQN Cold": {
+        "success_rate": 1.0,
+        "avg_reward": 37.918260869565216,
+        "avg_turns": 2.0817391304347828
+      },
+      "DQN Warm": {
+        "success_rate": 1.0,
+        "avg_reward": 38.0,
+        "avg_turns": 2.0
+      }
+    },
+    "Simple (\u22641 constraint)": {
+      "Random": {
+        "success_rate": 0.12777777777777777,
+        "avg_reward": -28.044444444444444,
+        "avg_turns": 7.455555555555556
+      },
+      "Rule-Based": {
+        "success_rate": 1.0,
+        "avg_reward": 31.694444444444443,
+        "avg_turns": 8.305555555555555
+      },
+      "DQN Cold": {
+        "success_rate": 1.0,
+        "avg_reward": 37.46111111111111,
+        "avg_turns": 2.5388888888888888
+      },
+      "DQN Warm": {
+        "success_rate": 1.0,
+        "avg_reward": 37.69444444444444,
+        "avg_turns": 2.3055555555555554
+      }
+    },
+    "Medium (2 constraints)": {
+      "Random": {
+        "success_rate": 0.1059322033898305,
+        "avg_reward": -33.03177966101695,
+        "avg_turns": 8.307203389830509
+      },
+      "Rule-Based": {
+        "success_rate": 1.0,
+        "avg_reward": 33.148305084745765,
+        "avg_turns": 6.851694915254237
+      },
+      "DQN Cold": {
+        "success_rate": 1.0,
+        "avg_reward": 36.99152542372882,
+        "avg_turns": 3.0084745762711864
+      },
+      "DQN Warm": {
+        "success_rate": 1.0,
+        "avg_reward": 37.13559322033898,
+        "avg_turns": 2.8559322033898304
+      }
+    },
+    "Complex (3 constraints)": {
+      "Random": {
+        "success_rate": 0.11206896551724138,
+        "avg_reward": -31.04022988505747,
+        "avg_turns": 7.468390804597701
+      },
+      "Rule-Based": {
+        "success_rate": 1.0,
+        "avg_reward": 34.304597701149426,
+        "avg_turns": 5.695402298850575
+      },
+      "DQN Cold": {
+        "success_rate": 1.0,
+        "avg_reward": 37.304597701149426,
+        "avg_turns": 2.6954022988505746
+      },
+      "DQN Warm": {
+        "success_rate": 1.0,
+        "avg_reward": 37.28735632183908,
+        "avg_turns": 2.706896551724138
+      }
+    }
+  }
+}

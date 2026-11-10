@@ -1,0 +1,76 @@
+{
+  "db_size": 110,
+  "db_food_types": 23,
+  "db_areas": 5,
+  "db_priceranges": 3,
+  "db_food_dist": {
+    "indian": 22,
+    "chinese": 17,
+    "italian": 15,
+    "british": 11,
+    "european": 6,
+    "modern european": 5,
+    "asian oriental": 5,
+    "gastropub": 4,
+    "mediterranean": 3,
+    "international": 3,
+    "turkish": 3,
+    "portuguese": 2,
+    "thai": 2,
+    "spanish": 2,
+    "french": 2,
+    "japanese": 1,
+    "korean": 1,
+    "vietnamese": 1,
+    "african": 1,
+    "lebanese": 1,
+    "seafood": 1,
+    "mexican": 1,
+    "north american": 1
+  },
+  "db_area_dist": {
+    "centre": 69,
+    "west": 14,
+    "east": 9,
+    "south": 9,
+    "north": 9
+  },
+  "db_price_dist": {
+    "expensive": 57,
+    "moderate": 31,
+    "cheap": 22
+  },
+  "num_goals_train": 3817,
+  "num_goals_val": 438,
+  "num_goals_test": 437,
+  "num_goals_total": 4692,
+  "goal_constraints_dist": {
+    "3": 1630,
+    "2": 2302,
+    "0": 760
+  },
+  "goals_with_booking": 2661,
+  "goals_with_booking_pct": 56.71355498721228,
+  "goal_reqt_dist": {
+    "3": 579,
+    "1": 603,
+    "0": 2661,
+    "2": 849
+  },
+  "goals_with_fallback": 1157,
+  "num_pairs_train": 19678,
+  "num_pairs_val": 2447,
+  "num_pairs_test": 2394,
+  "num_pairs_total": 24519,
+  "action_distribution": {
+    "request_food": 1089,
+    "request_area": 615,
+    "offer_venue": 8744,
+    "inform_phone": 644,
+    "request_people": 1399,
+    "request_day": 588,
+    "request_time": 313,
+    "book": 4012,
+    "bye": 7115
+  }
+}
