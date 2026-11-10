@@ -115,3 +115,8 @@ protocol wastes the most turns.
 - Seeds: 42, 123, 456 (used throughout)
 - 1,000 fixed eval goals saved in `data/processed/eval_goals_1000.json`
 - Deterministic seeding via `src/utils.set_seed()`
+
+## Contributors
+Jivitesh Bansal
+Sanchit Luthra
+Jasman Kaur
